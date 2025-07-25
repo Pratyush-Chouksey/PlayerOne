@@ -1,0 +1,125 @@
+body, .booking-bg {
+  min-height: 100vh;
+  background: #000;
+}
+
+.booking-container {
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  max-width: 700px;
+  width: 90vw;
+  background: rgba(24, 24, 24, 0.98);
+  border-radius: 24px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.22);
+  padding: 48px 40px 36px 40px;
+  color: #fff;
+}
+
+.booking-title {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #FA9021;
+}
+
+.booking-form .form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.booking-form label {
+  margin-bottom: 7px;
+  font-weight: 600;
+  color: #FA9021;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  padding: 13px 16px;
+  border-radius: 10px;
+  border: 1.5px solid #333;
+  background: #222;
+  color: #fff;
+  font-size: 1.08rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+  border: 2px solid #FA9021;
+}
+
+.booking-form textarea {
+  min-height: 70px;
+  resize: vertical;
+}
+
+.booking-submit {
+  width: 100%;
+  background: linear-gradient(90deg, #FA9021 60%, #ff6a00 100%);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 0;
+  font-size: 1.15rem;
+  margin-top: 14px;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(250,144,33,0.10);
+}
+
+.booking-submit:hover {
+  background: linear-gradient(90deg, #ff6a00 0%, #FA9021 100%);
+}
+
+.booking-confirmation {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.booking-confirmation h2 {
+  color: #FA9021;
+  margin-bottom: 16px;
+}
+
+.booking-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px 32px;
+}
+
+.form-row-full {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 900px) {
+  .booking-form-grid {
+    grid-template-columns: 1fr;
+    gap: 18px 0;
+  }
+  .form-row-full {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 700px) {
+  .booking-container {
+    padding: 18px 4vw 12px 4vw;
+    margin-top: 70px;
+    max-width: 98vw;
+  }
+  .booking-title {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,138 @@
+body, .pricing-bg {
+  min-height: 100vh;
+  background: #000;
+}
+
+.pricing-section {
+  max-width: 1100px;
+  margin: 100px auto 48px auto;
+  padding: 48px 16px 32px 16px;
+  background: rgba(24, 24, 24, 0.98);
+  border-radius: 24px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.22);
+}
+
+.pricing-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #FA9021;
+  margin-bottom: 36px;
+  font-weight: 800;
+}
+
+.pricing-cards {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  background: #181818;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+  padding: 32px 28px 28px 28px;
+  min-width: 260px;
+  max-width: 320px;
+  flex: 1 1 280px;
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pricing-card.popular {
+  border: 2.5px solid #FA9021;
+  box-shadow: 0 8px 32px rgba(250,144,33,0.13);
+  transform: scale(1.04);
+  z-index: 2;
+}
+
+.popular-badge {
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #FA9021;
+  color: #fff;
+  font-weight: 700;
+  padding: 4px 18px;
+  border-radius: 12px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+}
+
+.pricing-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  color: #FA9021;
+  font-weight: 700;
+}
+
+.price {
+  font-size: 2.1rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+  color: #fff;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 22px;
+  width: 100%;
+}
+
+.features li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #ccc;
+  text-align: left;
+  padding-left: 12px;
+  position: relative;
+}
+
+.features li:before {
+  content: '•';
+  color: #FA9021;
+  position: absolute;
+  left: 0;
+}
+
+.choose-btn {
+  background: #FA9021;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 7px;
+  padding: 12px 0;
+  width: 100%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.choose-btn:hover {
+  background: #ff6a00;
+}
+
+@media (max-width: 900px) {
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .pricing-card {
+    max-width: 95vw;
+    min-width: 0;
+    width: 100%;
+  }
+  .pricing-section {
+    padding: 18px 4vw 12px 4vw;
+    margin-top: 70px;
+    max-width: 98vw;
+  }
+}
