@@ -12,7 +12,6 @@ const Contact = () => {
   const handleSubmit = e => {
     e.preventDefault();
     setSubmitted(true);
-    // Here you would send the form data to your backend or email service
   };
 
   return (
@@ -39,7 +38,7 @@ const Contact = () => {
         </form>
         <div className="contact-info">
           <h3>PlayerOne Gaming Lounge</h3>
-          <p>123 Main Street, Sonipat, Haryana</p>
+          <p>Mg Mall Agarsain Chowk, Sector 14, Sonipat, Haryana</p>
           <p><b>Phone:</b> +91 98765 43210</p>
           <p><b>Email:</b> info@playerone.com</p>
         </div>

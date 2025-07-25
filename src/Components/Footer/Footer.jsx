@@ -42,7 +42,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="footer-bottom">
-      &copy; {new Date().getFullYear()} PlayerOne. All rights reserved.
+      &copy; 2025 PlayerOne. All rights reserved.
     </div>
   </footer>
 );
