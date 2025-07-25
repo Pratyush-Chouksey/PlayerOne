@@ -18,7 +18,7 @@ const Navbar = ({ activeLink, setActiveLink }) => {
     <header className={`navbar${scrolled ? " scrolled" : ""}`}>
       <div className="logo" onClick={() => setActiveLink("home")}> 
         <Link to="/">
-          <img src="src/assets/Logo.png" alt="Player One Logo" />
+          <img src="../../assets/image3.png" alt="Player One Logo" />
         </Link>
       </div>
 
