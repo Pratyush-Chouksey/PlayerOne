@@ -1,26 +1,30 @@
 import React from 'react';
 import './WhyPlayerOne.css';
+import EliteGamingRigs from '../../assets/EliteGamingRigs.png';
+import ConsoleZones from '../../assets/ConsoleZones.png';
+import Tournment from '../../assets/Tournment.png';
+import SnackAndChill from '../../assets/SnackAndChill.png';
 
 const features = [
   {
     title: "Elite Gaming Rigs",
     desc: "Top-tier PCs and consoles with ultra-low latency, RTX GPUs, and 240Hz displays.",
-    icon: "src/assets/EliteGamingRigs.png"
+    icon: EliteGamingRigs
   },
   {
     title: "Console Zones",
     desc: "Play on PS5 and Xbox Series X with friends on comfy couches & wide screens.",
-    icon: "src/assets/ConsoleZones.png"
+    icon: ConsoleZones
   },
   {
     title: "Tournaments & Leaderboards",
     desc: "Compete in weekly tournaments and climb the local rankings.",
-    icon: "src/assets/Tournment.png"
+    icon: Tournment
   },
   {
     title: "Snack & Chill Lounge",
     desc: "Fuel your sessions with snacks, energy drinks, and good vibes.",
-    icon: "src/assets/SnackAndChill.png"
+    icon: SnackAndChill
   }
 ];
 

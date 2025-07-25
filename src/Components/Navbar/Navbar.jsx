@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import { useState, useEffect } from "react";
+import logo from "../../assets/Logo.png";
 
 const Navbar = ({ activeLink, setActiveLink }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ const Navbar = ({ activeLink, setActiveLink }) => {
     <header className={`navbar${scrolled ? " scrolled" : ""}`}>
       <div className="logo" onClick={() => setActiveLink("home")}> 
         <Link to="/">
-          <img src="../../assets/image3.png" alt="Player One Logo" />
+          <img src={logo} alt="Player One Logo" />
         </Link>
       </div>
 
